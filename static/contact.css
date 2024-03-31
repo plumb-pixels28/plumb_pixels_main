@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
+*{
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+body{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header #page1{
+    justify-content: space-between;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#page1 h1{
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    font-weight: 300;
+}
+#page1 p{
+    font-size: 2.3vw;
+}
+#left-page1{
+    padding: 5vw 4vw;
+    width: 60%;
+    font-size: 4vw;
+    z-index: 9;
+}
+#gooey1{
+    background-color: orangered;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 8;
+    filter: blur(20px);
+    aspect-ratio: 1/1;
+    right: 15%;
+    top: 15%;
+    animation: anime1 2s linear infinite alternate-reverse;
+}
+#gooey2{
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    right: 15%;
+    filter: blur(20px);
+    top: 20%;
+    aspect-ratio: 1/1;
+    animation: anime2 1.3s ease-in-out infinite alternate-reverse;
+    z-index: 8;
+    background-color: orangered;
+}
+#page2{
+    width: 100vw;
+    margin: 5vw 0;
+}
+
+form{
+    border: 1px solid black;
+    margin: 0 4vw;
+    border-radius: 10px;
+    padding: 2vw;
+    display: grid;
+    height: auto;
+    padding: 1vw 2vw;
+    background-color: rgb(212, 212, 212);
+}
+#contact-heading{
+    font-size: 2vw;
+    margin: 0 0 1.5vw 0;
+}
+.divs{
+    margin: 1.4vw 0;
+}
+label{
+    display: block;
+    margin-bottom: .7vw;
+    font-size: 1.6vw;
+}
+input{
+    border-radius: 6px;
+    width: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    padding: 6px 8px;
+    font-size: 1vw;
+}
+
+select{
+    padding: 6px 8px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 1vw; 
+    width: 20%;
+}
+textarea{
+    width: 51%;
+    font-size: 1vw;
+    height: 123px;
+    border-radius: 8px;
+}
+.btn{
+    width: 10vw;
+    height: 8vh;
+    background-color: navy;
+    font-size: 1.4vw;
+    border-radius: 8px;
+    border: 2px solid navy;
+    color: white;
+}
+
+#page3{
+    width: 100vw;
+    position: relative;
+    margin-bottom: 5vw;
+}
+#zoom-heading{
+    font-size: 2vw;
+    margin: 0 0 1.5vw 0;
+}
+#date {
+    cursor: pointer;
+}
+#flx{
+    display: flex;
+    justify-content: space-between;
+}
+.wide{
+    width: 40vw;
+}
+
+#page4{
+    min-height: 40vh;
+    background-color: rgb(212, 212, 212);
+    margin: 0 4vw 5vw 4vw;
+    border-radius: 8px;
+}
+#page4-heading{
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0;
+}
+#page4-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+#page4-main a{
+    text-decoration: underline black;
+    font-size: 1.8vw;
+    margin: 1.5vw;
+    color: black;
+    display: flex;
+    align-self: center;
+}
+#page4-main a img{
+    margin: 0 0.7vw;
+}
+#page4-main h2{
+    margin: 3vw 0;
+}
+@keyframes anime1 {
+    from{
+        transform: translate(10%,-20%);
+
+    }
+    to{
+        transform: translate(-40%,7%);
+        transform: scale(1.1);
+    }
+}
+@keyframes anime2 {
+    from{
+        transform: translate(20%,-10%);
+
+    }
+    to{
+        transform: translate(-90%,10%);
+        transform: scale(1.1);
+    }   
+}
+
+@media screen and (max-width: 1024px) {
+    #page1 h1 {
+      font-size: 5vw;
+    }
+    #page1 p{
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    #contact-heading{
+        font-size: 2.4vw;
+    }
+    label{
+        font-size: 2vw;
+    }
+    input{
+        width: 70%;
+        padding: 10px 14px;
+        font-size: 1.7vw;
+    }
+    select{
+        width: 30%;
+        font-size: 1.5vw;
+        padding: 10px 14px;
+    }
+    textarea{
+        width: 71%;
+        font-size: 1.7vw;
+    }
+    .btn{
+        width: 10vw;
+        height: 6vh;
+        background-color: navy;
+        font-size: 1.7vw;
+        border-radius: 8px;
+        border: 2px solid navy;
+        color: white;
+    }
+    #page4-main a{
+        font-size: 3vw;
+        margin: 1.5vw;
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    #page1 h1 {
+      font-size: 7vw;
+    }
+    #page1 p{
+        font-size: 4vw;
+        font-weight: 300;
+        line-height: 2.5rem;
+    }
+    #left-page1{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    label{
+        font-size: 3vw;
+    }
+    input{
+        width: 80%;
+        padding: 10px 14px;
+        font-size: 2.4vw;
+    }
+    select{
+        width: 30%;
+        font-size: 2.4vw;
+        padding: 10px 14px;
+    }
+    textarea{
+        width: 81%;
+        font-size: 2.5vw;
+        padding: 0 8px;
+    }
+    .btn{
+        width: 15vw;
+        height: 6vh;
+        background-color: navy;
+        font-size: 2.5vw;
+        border-radius: 8px;
+        border: 2px solid navy;
+        color: white;
+    }
+    #page4-main a{
+        font-size: 4vw;
+        margin: 2.5vw;
+    }
+    #page4-heading{
+        font-size: 5vw;
+        margin: 3vw 0 ;
+    }
+}
+@media screen and (max-width: 400px) {
+    #page1 h1 {
+        font-size: 10vw;
+    }
+    #page1 p{
+        font-size: 5vw;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+    #contact-heading{
+        font-size: 4.5vw;
+    }
+    label{
+        font-size: 4vw;
+    }
+    input{
+        width: 80%;
+        padding: 10px 14px;
+        font-size: 3vw;
+    }
+    select{
+        width: 30%;
+        font-size: 3vw;
+        padding: 10px 14px;
+    }
+    textarea{
+        width: 81%;
+        font-size: 3vw;
+        padding: 0 8px;
+    }
+    .btn{
+        width: 20vw;
+        height: 6vh;
+        background-color: navy;
+        font-size: 3vw;
+        border-radius: 8px;
+        border: 2px solid navy;
+        color: white;
+    }
+    #page4-main a{
+        font-size: 5vw;
+        margin: 2.7vw;
+    }
+    #page4-heading{
+        font-size: 6vw;
+        margin: 5vw 0 ;
+    }
+}

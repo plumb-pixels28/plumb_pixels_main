@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#gooey1{
+    background-color: orangered;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 8;
+    filter: blur(20px);
+    aspect-ratio: 1/1;
+    right: 15%;
+    top: 15%;
+    animation: anime1 2s linear infinite alternate-reverse;
+}
+#gooey2{
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    right: 15%;
+    filter: blur(20px);
+    top: 20%;
+    aspect-ratio: 1/1;
+    animation: anime2 1.3s ease-in-out infinite alternate-reverse;
+    z-index: 8;
+    background-color: orangered;
+}
+header{
+    display: flex;
+    height: 100vh;
+    widows: 100vw;
+    position: relative;
+}
+#left-heading h1{
+    margin: 2vw 0vw;
+    font-size: 6vw;
+}
+#left-heading p{
+    font-size:2vw;
+    line-height: 2.5rem;
+}
+#left-header{
+    z-index: 9;
+    margin: 6vw 2vw;
+    width: 55%;
+}
+#page1{
+    width: 100vw;
+    min-height: 100vh;
+}
+#page1 h2{
+    font-size: 2.3vw;
+    margin: 1vw .5vw;
+}
+#page1 p{
+    margin: 0vw .5vw;
+    font-size: 1.7vw;
+
+    font-weight: 300;
+}
+footer{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+}
+footer h3{
+    color: white;
+    font-size: 13vw;
+    z-index: 9;
+}
+footer p{
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100vw;
+    position: absolute;
+    letter-spacing: 1.7rem;
+}
+.gooeyes{
+    background-color: orangered;
+    position: absolute;
+    filter: blur(10px);
+}
+#gooey6{
+    top: 0;
+    width: 120%;
+    left: -10%;
+    z-index: 5;
+    height: 20%;
+}
+#gooey7{
+    z-index: 4;
+    left: -10%;
+    top: 10%;
+    border-bottom: 40vh solid #000;
+    border-left: 70vw solid orangered;
+    animation: anime5 3s ease-in-out infinite alternate-reverse;
+}
+#gooey8{
+    right: -10%;
+    z-index: 4;
+    top: 13%;
+    border-right: 45vw solid orangered;
+    animation: anime6 1.5s ease-in infinite alternate-reverse;
+    border-bottom: 30vh solid #000;
+}
+@keyframes anime1 {
+    from{
+        transform: translate(10%,-20%);
+
+    }
+    to{
+        transform: translate(-40%,7%);
+        transform: scale(1.1);
+    }
+}
+@keyframes anime2 {
+    from{
+        transform: translate(20%,-10%);
+
+    }
+    to{
+        transform: translate(-90%,10%);
+        transform: scale(1.1);
+}
+}
+@keyframes anime5 {
+    from{
+        transform: translate(-10%,10);
+    }
+    to{
+        transform: translate(10%,10%);
+    }
+}
+@keyframes anime6 {
+    from{
+        transform: translate(-9%,10);
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #left-heading h1{
+        font-size: 7vw;
+    }
+    #left-heading p{
+        font-size: 3vw;
+        line-height: 2.5rem;
+    }   
+    #left-header{
+        width: 70%;
+    }
+    #gooey1{
+        width: 40vw;
+    }
+    #gooey2{
+        width: 40vw;
+    }
+    #page1 h2{
+        font-size: 3.3vw;
+    }
+    #page1 p{
+        font-size: 2vw;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 750px) {
+    #left-heading h1{
+        font-size: 9vw;
+    }
+    #left-heading p{
+        font-size: 4vw;
+        line-height: 2rem;
+        font-weight: 300;
+    }
+    #page1 h2{
+        font-size: 5.3vw;
+    }
+    #page1 p{
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    #page1{
+        margin: 8vw 0;
+    }
+    footer p{
+        letter-spacing: 1.2rem;
+    }
+}
+@media (max-width: 550px) {
+    #left-header{
+        width: 90%;
+    }
+    #gooey1{
+        width: 60vw;
+    }
+    #gooey2{
+        width: 60vw;
+    }
+    .para1 h2{
+        font-size: 5.3vw;
+    }
+    .para1 p{
+        font-size: 5vw;
+        line-height: 1.3rem;
+        font-weight: 300;
+    }
+    .para1{
+        margin-bottom: 5vw;
+    }
+     footer p{
+        font-size: 3vw;
+    }
+   
+}
+@media (max-width: 400px) {
+    #left-heading h1{
+        font-size: 13vw;
+    }
+    #left-heading p{
+        font-size: 5vw;
+        line-height: 2rem;
+        font-weight: 300;
+    }  
+    #page1 h2{
+        font-size: 7vw;
+    }
+    #page1 p{
+        font-size: 4vw;
+        line-height: 1.3rem;
+        font-weight: 300;
+    }
+    #in-end{
+        bottom: 2%;
+    }
+}

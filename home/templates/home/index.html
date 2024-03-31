@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumb pixels</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href='{% static "style.css" %}'>
+    <link rel="shortcut icon" href="{% static 'icon.png' %}" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Welcome to Plumb Pixels - your premier destination for expert web design solutions tailored exclusively for plumbing professionals. Elevate your online presence with our stunning designs and drive more leads to your business. Contact us today to start your digital journey!">
+    <meta name="keywords" content="plumbing web design, plumber websites, plumbing SEO optimization, custom plumbing websites, responsive plumber websites, plumbing digital solutions, plumbing business growth, lead generation for plumbers">
+</head>
+
+<body>
+    <div id="page1">
+        <header>
+            <nav>
+                <div id="full-scr">
+                    <div id="close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="rgba(253,251,251,1)"><path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg></div>
+                    <h4> <a href="{% url 'homepage' %}"><p>Home</p></a></h4>
+                    <h4> <a href="{% url 'about-page' %}">About</a></h4>
+                    <h4> <a href="{% url 'contact-page' %}">Contact</a></h4>
+                </div>
+                <div id="left_nav">
+                    <img src='{% static "img1.png" %}' alt="">
+                </div>
+                <div id="right_nav">
+                    <div id="right-nav-1">
+                        <div id="menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>Menu</div>
+                    </div>
+                    <div id="right-nav-2">
+                        <h4> <a href="{% url 'homepage' %}"><p>Home</p></a></h4>
+                        <h4> <a href="{% url 'about-page' %}">About</a></h4>
+                        <h4> <a href="{% url 'contact-page' %}">Contact</a></h4>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <main>
+                {% if messages %}
+                <div id="flash-message">
+                    {% for msg in messages %}
+                    {{ msg }}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <div id="left_main">
+                    <h1>A little about Plumb Pixels</h1>
+                    <h3>Welcome to Plumb Pixels! We create striking websites exclusively for plumbers. Our designs blend creativity with functionality, ensuring your online presence stands out. Elevate your business with us today!</h3>
+                    <button id="book_call"><a href="{% url 'zoom-page' %}">Book a zoom call</a></button>
+                </div>
+                <div id="right_main">
+                    <div id="gooey1"></div>
+                </div>
+                <div id="gooey3"></div>
+                <div id="gooey2"></div>
+            </div>
+            <div id="page1-part2">
+                <div id="top-side">
+                    <img src="{% static 'img3.png' %}" alt="">
+                </div>
+                <div id="bottom-side">
+                    <h2>SEO-Powered Websites</h2>
+                    <p>Welcome to Plumb Pixels, where we seamlessly integrate cutting-edge SEO strategies into our exceptional web designs for plumbers. Maximize your online visibility and attract more leads by partnering with us today. Let's elevate your digital presence together!</p>
+                </div>
+            </div>
+        <div id="page2-heading">
+            <p>HOW TO PROCEEED</p>
+        </div>
+        <div id="page2">
+            <div id="flx-1">
+                <div id="step1" class="steps" data-image="{% static 'social.png' %}">
+                        <h2>Socially</h2>
+                        <p>Reach out us by connecting through any social media platform. Expect a prompt reply within 24 hours.</p>
+                </div>
+                <div id="step2" class="steps" data-image="{% static 'contact.png' %}">
+                        <h2>Contact Form Submission</h2>
+                        <p>Complete our user-friendly contact form on our website's dedicated page to initiate communication effortlessly.</p>
+                </div>
+            </div>
+            <div id="fixed-image"></div>
+            <div id="flx-2">
+                <div id="step3" class="steps" data-image="{% static 'email.png' %}">
+                    <h2>Eamil</h2>
+                    <p>We pride ourselves on our responsiveness and ensure all emails are attended to within 24 hours.</p>
+            </div>
+            <div id="step4" class="steps" data-image="{% static 'zoom.png' %}">
+                <h2>Zoom Calls</h2>
+                <p>Enhance your project discussions with a personalized Zoom consultation. Schedule a call to explore tailored solutions and align strategies for success.</p>
+        </div>
+            </div>
+        </div>
+        <div id="page3">
+            <div id="page3-left">
+                <div id="gooey4"></div>
+                <div id="gooey5"></div>
+                <div id="page3-text">
+                    <h2>Crafting Digital Excellence: Elevate Your Plumbing Business.</h2>
+                    <p>Indulge in exceptional website design, impeccable coding, and comprehensive service tailored to the plumbing industry. Enjoy seamless communication and a collaborative experience, ensuring your digital presence reflects the excellence of your plumbing business, ultimately driving increased lead generation.</p>
+            </div>
+            </div>
+            <div id="page3-right">
+                <img src="{% static 'img2.png' %}" alt="">
+            </div>
+        </div>
+        <div id="scroller">
+            <div class="con">
+                <h1>EXCELLENCE</h1><img src="{% static 'img9.png' %}" alt="">
+                <h1>ASCENDANCY</h1><img src="{% static 'img9.png' %}" alt="">
+                <h1>LEAD-DRIVING</h1><img src="{% static 'img9.png' %}" alt="">
+            </div>
+            <div class="con">
+                <h1>EXCELLENCE</h1><img src="{% static 'img9.png' %}" alt="">
+                <h1>ASCENDANCY</h1><img src="{% static 'img9.png' %}" alt="">
+                <h1>LEAD-DRIVING</h1><img src="{% static 'img9.png' %}" alt="">
+            </div>
+            <div class="con">
+                <h1>EXCELLENCE</h1><img src="{% static 'img9.png' %}" alt="">
+                <h1>ASCENDANCY</h1><img src="{% static 'img9.png' %}" alt="">
+                <h1>LEAD-DRIVING</h1><img src="{% static 'img9.png' %}" alt="">
+            </div>
+             
+        </div>
+        <div id="page4">
+            <div id="page4-heading">
+                <h1>WHAT WE PROVIDE</h1>
+
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-heading">
+                        <img src="{% static 'customer.png' %}" width="50px" alt="">
+                        <h2>Customer Satisfaction</h2>
+                    </div>
+                    <p>
+                        At the core of our ethos lies your satisfaction. We go above and beyond to ensure every interaction leaves you not just satisfied, but truly delighted. With responsive communication and meticulous attention to detail, we're dedicated to earning your trust and loyalty through exceptional service.
+                    </p>
+                 </div>  
+                  <div class="swiper-slide">
+                    <div class="swiper-heading">
+                        <img src="{% static 'time.png' %}" width="50px" alt="">
+                        <h2>Full Time Service</h2>
+                    </div>
+                    <p>
+                            Our commitment to your convenience knows no bounds. With our round-the-clock service, we stand ready to assist you at any hour, ensuring your peace of mind and uninterrupted support whenever you need it.
+                    </p>
+                 </div>  
+                  <div class="swiper-slide">
+                    <div class="swiper-heading">
+                        <img src="{% static 'SEO.png' %}" width="50px" alt="">
+                        <h2>SEO</h2>
+                    </div>
+                    <p>
+                        Unlock unparalleled visibility and reach with our SEO optimization services. We employ cutting-edge strategies to enhance your online presence, ensuring your website ranks high on search engine results and attracts targeted traffic, ultimately maximizing your business potential.
+                    </p>
+                 </div>  
+                  <div class="swiper-slide">
+                    <div class="swiper-heading">
+                        <img src="{% static 'domain.png' %}" width="50px" alt="">
+                        <h2>Free Domain Name</h2>
+                    </div>
+                    <p>
+                        Experience the advantage of a free domain name with us. As part of our commitment to your success, we offer complimentary domain registration, allowing you to establish a professional online presence without added costs, giving you the perfect start to your digital journey.
+                    </p>
+                 </div>  
+                </div>
+            </div>
+        </div>
+        <div id="page5">
+            <footer>
+                <div id="gooey6" class="gooeyes"></div>
+                <div id="gooey7" class="gooeyes"></div>
+                <div id="gooey8" class="gooeyes"></div>
+                <div id="details">
+                    <div id="left-details">
+                        <h4>Email : plumbpixels@gmail.com
+                        </h4>
+                    </div>
+                    <div id="right-details">
+                        <h4>Elevate your brand with our tailored web solutions. Stunning designs, impeccable functionality—stand out in the digital crowd.</h4>
+                        <h4>Partner with us for digital success. Beautiful websites, tangible results—let's bring your online vision to life.</h4>
+                    </div>
+
+                </div>
+                <div id="footer-heading">
+                    <h1>Plumb pixels</h1>
+            </div><hr>
+                <div id="bottom-links">
+                    <h2><a href="https://www.instagram.com/plumbpixels/">Instagram</a></h2>
+                    <h2><a href="https://twitter.com/PixelsPlum96966">Twitter</a></h2>
+                    <h2><a href="https://www.linkedin.com/in/plumb-pixels-8565a5301/">LinkedIn</a></h2>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            function swiperAnimation() {
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    spaceBetween: 100,
+                });
+            }
+            function page2Animation(){
+            var step1 = document.getElementById("step1")
+            var step2 = document.getElementById("step2")
+            var step3 = document.getElementById("step3")
+            var step4 = document.getElementById("step4")
+            var body = document.querySelector("body")
+
+            var step1_image = step1.getAttribute("data-image")
+            var step2_image = step2.getAttribute("data-image")
+            var step3_image = step3.getAttribute("data-image")
+            var step4_image = step4.getAttribute("data-image")
+
+            var fixed_image = document.getElementById("fixed-image")
+            step1.addEventListener("mouseenter",function(){
+                fixed_image.style.backgroundImage = `url(${step1_image})`;
+            })
+            step2.addEventListener("mouseenter",function(){
+                fixed_image.style.backgroundImage = `url(${step2_image})`;
+            })
+            step3.addEventListener("mouseenter",function(){
+                fixed_image.style.backgroundImage = `url(${step3_image})`;
+            })
+            step4.addEventListener("mouseenter",function(){
+                fixed_image.style.backgroundImage = `url(${step4_image})`;
+            })
+        }
+            function smooth_scrolling(){
+                const scroll = new LocomotiveScroll({
+                el: document.querySelector('body'),
+               smooth: true
+            });
+        }
+
+        function removeFlashMessage() {
+            var flashMessage = document.getElementById("flash-message");
+            if (flashMessage) {
+                setTimeout(function() {
+                    flashMessage.remove();
+                }, 5000);
+            }
+        }
+        window.addEventListener('load', removeFlashMessage);
+
+        var menu = document.getElementById("menu")
+        var full = document.getElementById("full-scr")
+        var close = document.getElementById("close")
+        menu.addEventListener("click",function(){
+            full.style.top = 0
+        })
+        close.addEventListener("click",function(){
+            full.style.top = -100+"vh"
+        })
+
+            page2Animation()
+            swiperAnimation()
+        </script>
+</body>
+</html>

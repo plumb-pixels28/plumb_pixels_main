@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zoom call</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'contact.css' %}">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="shortcut icon" href="{% static 'icon.png' %}" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+<body>
+<header>
+    <div id="page1">
+        <div id="left-page1">
+            <H1>Book a zoom call</H1>
+            <p>
+                Welcome to Plumb Pixels, where we specialize in crafting pixel-perfect websites tailored exclusively for plumbing professionals. With meticulous attention to detail and a deep understanding of the industry, we create stunning designs that showcase expertise and drive results. From intuitive navigation to responsive layouts, our end-to-end service ensures your online presence not only stands out but also attracts more leads. Let's elevate your digital presence together.
+            </p>
+        </div>
+        <div id="right-page1">
+            <div id="gooey1">
+
+            </div>
+            <div id="gooey2">
+
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="page2">
+        
+        <form action="/zoom/" method="post">
+            {% csrf_token %}
+            <div id="zoom-heading">
+                <h1>Book a zoom call</h1>
+            </div>
+        <div id="flx">
+            <div id="left-zoom">
+                <div class="divs">
+                    <label for="name2">Your Name</label>
+                    <input type="text" name="name" id="name" class="wide" placeholder="john wetler" required>
+                </div>
+                <div class="divs">
+                    <label for="email2">Your Email</label>
+                    <input type="email" name="email" id="email" class="wide" required>
+                </div>
+            </div>
+            <div id="right-zoom">
+                <div class="divs">
+                    <label for="date">Select Date</label>
+                    <input type="text" class="datepicker wide" name="date" id="date" placeholder="YYYY-MM-DD" autocomplete="off" required>
+
+                </div>
+                <div class="divs">
+                    <label for="time">Select Time (EST)</label>
+                    <input type="text" class="timepicker wide" name="time" id="time" placeholder="HH:MM" autocomplete="off" required>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <a href='{% url "contact-page" %}'>Or fill contact form here</a>
+
+        </form>
+    </div>
+    <div id="page4">
+        <div id="page4-heading">
+            <h1>Social Links</h1>
+        </div>
+        <div id="page4-main">
+            <a href="https://www.instagram.com/plumbpixels/"> <img src='{% static "instagram.png" %}' alt="">Instagram</a>
+            <a href="https://twitter.com/PixelsPlum96966"><img src='{% static "twitter.png" %}' alt="">Twitter</a>
+            <a href="https://www.linkedin.com/in/plumb-pixels-8565a5301/"><img src='{% static "linkedin.png" %}' alt="">LinkedIn</a>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $(".datepicker").datepicker({
+            dateFormat: 'yy-mm-dd' 
+        });
+        $(".timepicker").timepicker({
+            timeFormat: 'hh:mm tt', 
+            timezone: 'ETC/UTC',
+            step: 10 
+        });
+    });
+</script>
+</body>
+</html>
+
+
